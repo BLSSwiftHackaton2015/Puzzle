@@ -15,19 +15,19 @@
                                 <button width="43" alignment="left" title="1" id="dKK-Lb-yi4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="btnOneClick" destination="AgC-eL-Hgc" id="xQm-Es-4ql"/>
+                                        <action selector="btn1x1Click" destination="AgC-eL-Hgc" id="MYk-xZ-0KC"/>
                                     </connections>
                                 </button>
                                 <button width="43" alignment="left" title="2" id="xmw-Xh-68g">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="G94-0r-Pqc"/>
+                                        <action selector="btn1x2Click" destination="AgC-eL-Hgc" id="hpY-pC-Wat"/>
                                     </connections>
                                 </button>
                                 <button width="43" alignment="left" title="3" id="KBh-MM-fKw">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="CBp-oh-aGp"/>
+                                        <action selector="btn1x3Click" destination="AgC-eL-Hgc" id="VTR-tp-ub6"/>
                                     </connections>
                                 </button>
                             </items>
@@ -37,19 +37,19 @@
                                 <button width="43" alignment="left" title="4" id="nO1-uX-tbX">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="W5j-aZ-TPO"/>
+                                        <action selector="btn2x1Click" destination="AgC-eL-Hgc" id="l0D-gW-pCK"/>
                                     </connections>
                                 </button>
                                 <button width="43" alignment="left" title="5" id="N8c-nv-eeh">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="vph-Y8-gFH"/>
+                                        <action selector="btn2x2Click" destination="AgC-eL-Hgc" id="uI2-dW-Vqw"/>
                                     </connections>
                                 </button>
                                 <button width="43" alignment="left" title="6" id="TY0-8J-fE0">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="OiS-Z6-ldz"/>
+                                        <action selector="btn2x3Click" destination="AgC-eL-Hgc" id="amf-fN-fWc"/>
                                     </connections>
                                 </button>
                             </items>
@@ -59,27 +59,34 @@
                                 <button width="43" alignment="left" title="7" id="gkA-yH-tyY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="Qh7-qn-mjH"/>
+                                        <action selector="btn3x1Click" destination="AgC-eL-Hgc" id="wEU-xd-q5w"/>
                                     </connections>
                                 </button>
                                 <button width="43" alignment="left" title="8" id="cS9-BF-Vt3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="p2T-bw-VVe"/>
+                                        <action selector="btn3x2Click" destination="AgC-eL-Hgc" id="2bV-Lf-OEy"/>
                                     </connections>
                                 </button>
                                 <button width="43" alignment="left" id="JRd-xE-PNa">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="srD-2m-otA"/>
+                                        <action selector="btn3x3Click" destination="AgC-eL-Hgc" id="5Iq-Eh-hpi"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="btn2" destination="xmw-Xh-68g" id="toM-S9-BiC"/>
-                        <outlet property="btnOneOutlet" destination="dKK-Lb-yi4" id="4WK-JX-ElK"/>
+                        <outlet property="action" destination="dKK-Lb-yi4" id="wHd-3D-Q0e"/>
+                        <outlet property="btn1x2" destination="xmw-Xh-68g" id="tNy-j5-bcZ"/>
+                        <outlet property="btn1x3" destination="KBh-MM-fKw" id="Dfr-Wm-K5Q"/>
+                        <outlet property="btn2x1" destination="nO1-uX-tbX" id="spF-5t-d2h"/>
+                        <outlet property="btn2x2" destination="N8c-nv-eeh" id="SZJ-Uw-LiP"/>
+                        <outlet property="btn2x3" destination="TY0-8J-fE0" id="FSN-cl-fY6"/>
+                        <outlet property="btn3x1" destination="gkA-yH-tyY" id="Qwh-iw-U56"/>
+                        <outlet property="btn3x2" destination="cS9-BF-Vt3" id="luW-r5-mUT"/>
+                        <outlet property="btn3x3" destination="JRd-xE-PNa" id="j92-Bk-KFQ"/>
                     </connections>
                 </controller>
             </objects>

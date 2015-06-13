@@ -28,10 +28,60 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    @IBAction func btnOneClick() {
-        btnOneOutlet.setTitle(":)")
-        btn2.setTitle(":)")
+
+
+
+    @IBOutlet weak var btn1x1: WKInterfaceButton!
+    @IBOutlet weak var btn1x2: WKInterfaceButton!
+    @IBOutlet weak var btn1x3: WKInterfaceButton!
+
+    @IBOutlet weak var btn2x1: WKInterfaceButton!
+    @IBOutlet weak var btn2x2: WKInterfaceButton!
+    @IBOutlet weak var btn2x3: WKInterfaceButton!
+
+    @IBOutlet weak var btn3x1: WKInterfaceButton!
+    @IBOutlet weak var btn3x2: WKInterfaceButton!
+    @IBOutlet weak var btn3x3: WKInterfaceButton!
+
+    
+    @IBAction func btn1x1Click() {
+        clickLogger(1)
     }
-    @IBOutlet weak var btn2: WKInterfaceButton!
-    @IBOutlet weak var btnOneOutlet: WKInterfaceButton!
+    
+    @IBAction func btn1x2Click() {
+        clickLogger(2)
+    }
+    
+    @IBAction func btn1x3Click() {
+        clickLogger(3)
+    }
+    
+    @IBAction func btn2x1Click() {
+        clickLogger(4)
+    }
+    
+    @IBAction func btn2x2Click() {
+        clickLogger(5)
+    }
+    
+    @IBAction func btn2x3Click() {
+        clickLogger(6)
+    }
+    
+    @IBAction func btn3x1Click() {
+        clickLogger(7)
+    }
+    
+    @IBAction func btn3x2Click() {
+        clickLogger(8)
+    }
+    
+    @IBAction func btn3x3Click() {
+        clickLogger(9)
+    }
+    
+    func clickLogger(btn: Int) {
+        println(String(btn))
+    }
+    
 }
