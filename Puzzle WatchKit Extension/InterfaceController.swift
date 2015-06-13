@@ -21,10 +21,18 @@ extension Array
     }
 }
 
+
 class InterfaceController: WKInterfaceController {
 
+    var gameType: GameType = .Numbers
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        
+        if let a = context as? Int {
+            self.gameType = GameType(rawValue: a)!
+        }
         
         // Configure interface objects here.
         ButtonsMatrix = [btn1x1, btn1x2, btn1x3,

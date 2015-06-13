@@ -19,6 +19,8 @@
 		2316B1891B2C24DA00E4B9FE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2316B1871B2C24DA00E4B9FE /* Interface.storyboard */; };
 		2316B18B1B2C24DA00E4B9FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2316B18A1B2C24DA00E4B9FE /* Images.xcassets */; };
 		2316B18E1B2C24DA00E4B9FE /* Puzzle WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2316B1761B2C24DA00E4B9FE /* Puzzle WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C757E0791B2C71370044FE12 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757E0781B2C71370044FE12 /* MenuController.swift */; };
+		C757E07B1B2C78C30044FE12 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757E07A1B2C78C30044FE12 /* MenuRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		2316B1861B2C24DA00E4B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2316B1881B2C24DA00E4B9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2316B18A1B2C24DA00E4B9FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C757E0781B2C71370044FE12 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		C757E07A1B2C78C30044FE12 /* MenuRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				2316B17A1B2C24DA00E4B9FE /* InterfaceController.swift */,
+				C757E0781B2C71370044FE12 /* MenuController.swift */,
+				C757E07A1B2C78C30044FE12 /* MenuRow.swift */,
 				2316B17C1B2C24DA00E4B9FE /* Images.xcassets */,
 				2316B1781B2C24DA00E4B9FE /* Supporting Files */,
 			);
@@ -379,7 +385,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C757E0791B2C71370044FE12 /* MenuController.swift in Sources */,
 				2316B17B1B2C24DA00E4B9FE /* InterfaceController.swift in Sources */,
+				C757E07B1B2C78C30044FE12 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +649,7 @@
 				2316B13B1B2C211B00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2316B13C1B2C211B00E4B9FE /* Build configuration list for PBXNativeTarget "PuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +658,7 @@
 				2316B13E1B2C211B00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2316B18F1B2C24DA00E4B9FE /* Build configuration list for PBXNativeTarget "Puzzle WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +667,7 @@
 				2316B1911B2C24DA00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2316B1921B2C24DA00E4B9FE /* Build configuration list for PBXNativeTarget "Puzzle WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +676,7 @@
 				2316B1941B2C24DA00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
