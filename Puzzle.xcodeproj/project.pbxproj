@@ -19,6 +19,7 @@
 		2316B1891B2C24DA00E4B9FE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2316B1871B2C24DA00E4B9FE /* Interface.storyboard */; };
 		2316B18B1B2C24DA00E4B9FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2316B18A1B2C24DA00E4B9FE /* Images.xcassets */; };
 		2316B18E1B2C24DA00E4B9FE /* Puzzle WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2316B1761B2C24DA00E4B9FE /* Puzzle WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE3862FF1B2C4B8300B836D3 /* GameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3862FE1B2C4B8300B836D3 /* GameOverController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		2316B1861B2C24DA00E4B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2316B1881B2C24DA00E4B9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2316B18A1B2C24DA00E4B9FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE3862FE1B2C4B8300B836D3 /* GameOverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				2316B17A1B2C24DA00E4B9FE /* InterfaceController.swift */,
 				2316B17C1B2C24DA00E4B9FE /* Images.xcassets */,
 				2316B1781B2C24DA00E4B9FE /* Supporting Files */,
+				CE3862FE1B2C4B8300B836D3 /* GameOverController.swift */,
 			);
 			path = "Puzzle WatchKit Extension";
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2316B17B1B2C24DA00E4B9FE /* InterfaceController.swift in Sources */,
+				CE3862FF1B2C4B8300B836D3 /* GameOverController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +645,7 @@
 				2316B13B1B2C211B00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2316B13C1B2C211B00E4B9FE /* Build configuration list for PBXNativeTarget "PuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +654,7 @@
 				2316B13E1B2C211B00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2316B18F1B2C24DA00E4B9FE /* Build configuration list for PBXNativeTarget "Puzzle WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +663,7 @@
 				2316B1911B2C24DA00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2316B1921B2C24DA00E4B9FE /* Build configuration list for PBXNativeTarget "Puzzle WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +672,7 @@
 				2316B1941B2C24DA00E4B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
