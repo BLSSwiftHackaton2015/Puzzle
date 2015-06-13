@@ -28,4 +28,10 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func btnOneClick() {
+        btnOneOutlet.setTitle(":)")
+        btn2.setTitle(":)")
+    }
+    @IBOutlet weak var btn2: WKInterfaceButton!
+    @IBOutlet weak var btnOneOutlet: WKInterfaceButton!
 }

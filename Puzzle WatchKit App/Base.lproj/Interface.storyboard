@@ -1,15 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Puzzle_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" id="GLu-oN-fIx">
+                            <items>
+                                <button width="43" alignment="left" title="1" id="dKK-Lb-yi4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="btnOneClick" destination="AgC-eL-Hgc" id="xQm-Es-4ql"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="left" title="2" id="xmw-Xh-68g">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="G94-0r-Pqc"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="left" title="3" id="KBh-MM-fKw">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="CBp-oh-aGp"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" id="cxt-zq-bZi">
+                            <items>
+                                <button width="43" alignment="left" title="4" id="nO1-uX-tbX">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="W5j-aZ-TPO"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="left" title="5" id="N8c-nv-eeh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="vph-Y8-gFH"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="left" title="6" id="TY0-8J-fE0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="OiS-Z6-ldz"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" id="zoL-Gv-Ct6">
+                            <items>
+                                <button width="43" alignment="left" title="7" id="gkA-yH-tyY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="Qh7-qn-mjH"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="left" title="8" id="cS9-BF-Vt3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="p2T-bw-VVe"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="left" id="JRd-xE-PNa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="srD-2m-otA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btn2" destination="xmw-Xh-68g" id="toM-S9-BiC"/>
+                        <outlet property="btnOneOutlet" destination="dKK-Lb-yi4" id="4WK-JX-ElK"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="393" y="160"/>
         </scene>
     </scenes>
 </document>
