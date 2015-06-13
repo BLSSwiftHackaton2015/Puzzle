@@ -9,6 +9,17 @@
 import WatchKit
 import Foundation
 
+extension Array
+{
+    /** Randomizes the order of an array's elements. */
+    mutating func shuffle()
+    {
+        for _ in 0..<10
+        {
+            sort { (_,_) in arc4random() < arc4random() }
+        }
+    }
+}
 
 class InterfaceController: WKInterfaceController {
 
@@ -19,6 +30,17 @@ class InterfaceController: WKInterfaceController {
         ButtonsMatrix = [btn1x1, btn1x2, btn1x3,
         btn2x1, btn2x2, btn2x3,
         btn3x1, btn3x2, btn3x3]
+
+        matrix.append("0")
+        var array : [String] = ["1","2","3","4","5","6","7","8"]
+        array.shuffle()
+        for element in array {
+        
+            matrix.append(element)
+        }
+        matrix.append("")
+        rerenderLabels()
+
     }
 
     override func willActivate() {
@@ -93,6 +115,7 @@ class InterfaceController: WKInterfaceController {
         matrix[index] = ""
         emptyIndex = index
     }
+    
     private func rerenderLabels() {
         if let m = ButtonsMatrix {
             for index in 1...9 {
@@ -101,7 +124,7 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
-    private var matrix : [String] = ["0","1","2","3","4","5","6","7","8",""]
+    private var matrix : [String] = []
     private var ButtonsMatrix : [WKInterfaceButton]?
     private var emptyIndex = 9
     private func checkNeighbor(index: Int) {
