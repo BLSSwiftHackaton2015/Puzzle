@@ -12,19 +12,19 @@
                     <items>
                         <group width="1" alignment="center" verticalAlignment="center" id="GLu-oN-fIx">
                             <items>
-                                <button width="43" alignment="left" title="1" id="dKK-Lb-yi4">
+                                <button width="40" height="40" alignment="left" title="1" id="dKK-Lb-yi4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn1x1Click" destination="AgC-eL-Hgc" id="MYk-xZ-0KC"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="left" title="2" id="xmw-Xh-68g">
+                                <button width="40" height="40" alignment="left" title="2" id="xmw-Xh-68g">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn1x2Click" destination="AgC-eL-Hgc" id="hpY-pC-Wat"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="left" title="3" id="KBh-MM-fKw">
+                                <button width="40" height="40" alignment="left" title="3" id="KBh-MM-fKw">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn1x3Click" destination="AgC-eL-Hgc" id="VTR-tp-ub6"/>
@@ -34,19 +34,19 @@
                         </group>
                         <group width="1" alignment="center" verticalAlignment="center" id="cxt-zq-bZi">
                             <items>
-                                <button width="43" alignment="left" title="4" id="nO1-uX-tbX">
+                                <button width="40" height="40" alignment="left" title="4" id="nO1-uX-tbX">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn2x1Click" destination="AgC-eL-Hgc" id="l0D-gW-pCK"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="left" title="5" id="N8c-nv-eeh">
+                                <button width="40" height="40" alignment="left" title="5" id="N8c-nv-eeh">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn2x2Click" destination="AgC-eL-Hgc" id="uI2-dW-Vqw"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="left" title="6" id="TY0-8J-fE0">
+                                <button width="40" height="40" alignment="left" title="6" id="TY0-8J-fE0">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn2x3Click" destination="AgC-eL-Hgc" id="amf-fN-fWc"/>
@@ -56,19 +56,19 @@
                         </group>
                         <group width="1" alignment="center" verticalAlignment="center" id="zoL-Gv-Ct6">
                             <items>
-                                <button width="43" alignment="left" title="7" id="gkA-yH-tyY">
+                                <button width="40" height="40" alignment="left" title="7" id="gkA-yH-tyY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn3x1Click" destination="AgC-eL-Hgc" id="wEU-xd-q5w"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="left" title="8" id="cS9-BF-Vt3">
+                                <button width="40" height="40" alignment="left" title="8" id="cS9-BF-Vt3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn3x2Click" destination="AgC-eL-Hgc" id="2bV-Lf-OEy"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="left" id="JRd-xE-PNa">
+                                <button width="40" height="40" alignment="left" id="JRd-xE-PNa">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="btn3x3Click" destination="AgC-eL-Hgc" id="5Iq-Eh-hpi"/>
@@ -90,7 +90,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="393" y="160"/>
+            <point key="canvasLocation" x="309" y="59"/>
         </scene>
     </scenes>
 </document>

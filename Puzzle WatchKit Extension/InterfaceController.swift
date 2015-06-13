@@ -31,7 +31,6 @@ class InterfaceController: WKInterfaceController {
         btn2x1, btn2x2, btn2x3,
         btn3x1, btn3x2, btn3x3]
 
-        matrix.append("0")
         var array : [String] = ["1","2","3","4","5","6","7","8"]
         array.shuffle()
         for element in array {
@@ -39,6 +38,8 @@ class InterfaceController: WKInterfaceController {
             matrix.append(element)
         }
         matrix.append("")
+        ImagesMatrix.shuffle()
+        ImagesMatrix.append(UIImage())
         rerenderLabels()
 
     }
@@ -113,56 +114,74 @@ class InterfaceController: WKInterfaceController {
     private func swap(index: Int) {
         matrix[emptyIndex] = matrix[index]
         matrix[index] = ""
+        ImagesMatrix[emptyIndex] = ImagesMatrix[index]
+        ImagesMatrix[index] = UIImage()
         emptyIndex = index
     }
     
     private func rerenderLabels() {
         if let m = ButtonsMatrix {
-            for index in 1...9 {
-                m[index-1].setTitle(matrix[index])
+            for index in 0...8 {
+                m[index].setTitle("")
+                m[index].setBackgroundImage(ImagesMatrix[index])
             }
         }
     }
     
     private var matrix : [String] = []
     private var ButtonsMatrix : [WKInterfaceButton]?
-    private var emptyIndex = 9
-    private func checkNeighbor(index: Int) {
-        switch index {
+    private var ImagesMatrix: [UIImage?] = [
+        UIImage(named: "logo1x1"),
+        UIImage(named: "logo1x2"),
+        UIImage(named: "logo1x3"),
+        UIImage(named: "logo2x1"),
+        UIImage(named: "logo2x2"),
+        UIImage(named: "logo2x3"),
+        UIImage(named: "logo3x1"),
+        UIImage(named: "logo3x2")
+    ]
+
+    
+    
+    private var emptyIndex = 8
+    private func checkNeighbor(naturalIndex: Int) {
+        var index = naturalIndex-1
+        var naturalEmptyIndex = emptyIndex+1
+        switch naturalIndex {
         case 1:
-            if contains([2,4], emptyIndex) {
+            if contains([2,4], naturalEmptyIndex) {
                 swap(index)
             }
         case 2:
-            if contains([1,3,5], emptyIndex) {
+            if contains([1,3,5], naturalEmptyIndex) {
                 swap(index)
             }
         case 3:
-            if contains([2,6], emptyIndex) {
+            if contains([2,6], naturalEmptyIndex) {
                 swap(index)
             }
         case 4:
-            if contains([1,5,7], emptyIndex) {
+            if contains([1,5,7], naturalEmptyIndex) {
                 swap(index)
             }
         case 5:
-            if contains([2,4,6,8], emptyIndex) {
+            if contains([2,4,6,8], naturalEmptyIndex) {
                 swap(index)
             }
         case 6:
-            if contains([3,5,9], emptyIndex) {
+            if contains([3,5,9], naturalEmptyIndex) {
                 swap(index)
             }
         case 7:
-            if contains([4,8], emptyIndex) {
+            if contains([4,8], naturalEmptyIndex) {
                 swap(index)
             }
         case 8:
-            if contains([5,7,9], emptyIndex) {
+            if contains([5,7,9], naturalEmptyIndex) {
                 swap(index)
             }
         case 9:
-            if contains([6,8], emptyIndex) {
+            if contains([6,8], naturalEmptyIndex) {
                 swap(index)
             }
         default:
