@@ -32,6 +32,7 @@ class ViewController: UITableViewController,UINavigationControllerDelegate, UIIm
         
         let gotImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         let a = gotImage.description
+        print(gotImage)
         imageTable.append((image:gotImage,description:a))
         self.tableView.reloadData()
         
@@ -59,7 +60,9 @@ class ViewController: UITableViewController,UINavigationControllerDelegate, UIIm
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("photoTableCell") as! UITableViewCell
-        cell.textLabel?.text = imageTable[indexPath.row].description
+        var text = imageTable[indexPath.row].description
+        var shortText = text.substringWithRange(Range<String.Index>(start: advance(text.startIndex, 10), end: advance(text.endIndex, -47)))
+        cell.textLabel?.text = shortText
         cell.imageView?.image = imageTable[indexPath.row].image
         return cell
     }
