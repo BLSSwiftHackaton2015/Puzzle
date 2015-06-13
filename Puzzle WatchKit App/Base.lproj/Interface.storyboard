@@ -10,6 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Puzzle_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label width="29" height="13" alignment="right" text="0" textAlignment="right" id="klw-xU-065"/>
                         <group width="1" alignment="center" verticalAlignment="center" id="GLu-oN-fIx">
                             <items>
                                 <button width="43" alignment="left" title="1" id="dKK-Lb-yi4">
@@ -87,10 +88,34 @@
                         <outlet property="btn3x1" destination="gkA-yH-tyY" id="Qwh-iw-U56"/>
                         <outlet property="btn3x2" destination="cS9-BF-Vt3" id="luW-r5-mUT"/>
                         <outlet property="btn3x3" destination="JRd-xE-PNa" id="j92-Bk-KFQ"/>
+                        <outlet property="counterLabel" destination="klw-xU-065" id="PGe-W7-8E1"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="393" y="160"/>
+            <point key="canvasLocation" x="124" y="169"/>
+        </scene>
+        <!--GameOverController-->
+        <scene sceneID="f5g-dm-X1b">
+            <objects>
+                <controller identifier="GameOverController" id="RMP-Ym-UGf" customClass="GameOverController" customModule="Puzzle_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Play again?" id="Nes-Hf-Axv"/>
+                        <label alignment="center" text="You Win!" id="f1l-DM-9jG"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="MxR-M2-iQ5">
+                            <items>
+                                <button width="67" alignment="left" title="yep" id="1Os-k1-rOJ">
+                                    <connections>
+                                        <action selector="gameAgain" destination="RMP-Ym-UGf" id="Ae6-RW-qo9"/>
+                                    </connections>
+                                </button>
+                                <button width="71" alignment="left" verticalAlignment="bottom" title="no" id="1p4-s5-84N"/>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="406" y="150"/>
         </scene>
     </scenes>
 </document>
