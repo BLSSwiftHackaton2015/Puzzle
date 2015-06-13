@@ -78,7 +78,7 @@
                         </group>
                     </items>
                     <connections>
-                        <outlet property="action" destination="dKK-Lb-yi4" id="wHd-3D-Q0e"/>
+                        <outlet property="btn1x1" destination="dKK-Lb-yi4" id="TDT-PX-cHS"/>
                         <outlet property="btn1x2" destination="xmw-Xh-68g" id="tNy-j5-bcZ"/>
                         <outlet property="btn1x3" destination="KBh-MM-fKw" id="Dfr-Wm-K5Q"/>
                         <outlet property="btn2x1" destination="nO1-uX-tbX" id="spF-5t-d2h"/>
